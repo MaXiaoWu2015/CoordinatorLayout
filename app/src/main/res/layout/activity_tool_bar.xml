@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tool_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aqy.matingting.myapplication.toolbar.ToolBarActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="add" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:text="标题"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/self_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/abc_ic_menu_share_mtrl_alpha" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <!--background的属性如果使用attr/xxx的,xxx必须要在style中的theme声明-->
+
+    <TextView
+        android:text="ToolBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="52dp"
+        android:textSize="25sp"
+        android:id="@+id/textView2" />
+
+</RelativeLayout>

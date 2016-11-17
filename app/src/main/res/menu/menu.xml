@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/search"
+        android:title="搜索"
+        android:icon="@drawable/search"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+    <item
+        android:id="@+id/share"
+        android:title="分享"
+        android:icon="@drawable/share"
+        app:showAsAction="ifRoom"
+        >
+    </item>
+
+    <item android:id="@+id/action_settings"
+        android:title="Setting"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/detail"
+        android:title="Detail"
+        android:orderInCategory="101"
+        app:showAsAction="never"
+        >
+    </item>
+</menu>
