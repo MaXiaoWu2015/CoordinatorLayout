@@ -19,16 +19,17 @@
         </activity>
         <activity android:name=".DrawerActivity"
             android:theme="@style/AppTheme.Base">
-
-        </activity>
-        <activity android:name=".toolbar.ToolBarActivity"
-            android:theme="@style/AppTheme.Base"
-            android:label="ToolBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".toolbar.ToolBarActivity"
+            android:theme="@style/AppTheme.Base"
+            android:label="ToolBar">
+
         </activity>
     </application>
 
