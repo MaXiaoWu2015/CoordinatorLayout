@@ -1,8 +1,10 @@
-package com.aqy.matingting.myapplication;
+package com.aqy.matingting.myapplication.drawer.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+
+import com.aqy.matingting.myapplication.drawer.frag.ViewPagerFragment;
 
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class MyViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return new Fragment();
+        return ViewPagerFragment.newInstance(position);
     }
 
 

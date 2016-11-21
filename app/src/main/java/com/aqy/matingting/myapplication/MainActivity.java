@@ -9,6 +9,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.aqy.matingting.myapplication.drawer.adapter.MyAdapter;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
