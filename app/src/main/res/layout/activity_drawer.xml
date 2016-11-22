@@ -167,6 +167,17 @@
                         android:visibility="gone"
                         android:textSize="9dp"
                         android:text="分享" />
+                    <fragment
+                        android:name="com.aqy.matingting.myapplication.drawer.frag.ToolBarMoreDialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/toolbar_more"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/background_mask"
+                        >
+                    </fragment>
                 </RelativeLayout>
 
             </android.support.v7.widget.Toolbar>
@@ -197,4 +208,5 @@
         android:layout_margin="20dp"
         app:layout_anchor="@id/viewpager"
         app:layout_anchorGravity="bottom|center" />
+
 </android.support.design.widget.CoordinatorLayout>

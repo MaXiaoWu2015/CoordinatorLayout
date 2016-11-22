@@ -3,9 +3,6 @@ package com.aqy.matingting.myapplication.Base;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-
-import utils.LogUtils;
-
 /**
  * Created by matingting on 2016/11/21.
  */
@@ -18,9 +15,6 @@ public class BaseFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getFragmentId();
-        LogUtils.v("FragmentId:"+mFragmentId);
-
-
     }
     public String getFragmentId(){
         if (mFragmentId==null){
