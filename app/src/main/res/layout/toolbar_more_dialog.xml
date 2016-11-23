@@ -1,38 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="100dp"
-    android:layout_height="200dp"
-
+    android:orientation="vertical" android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar_more_popup"
+    android:background="@drawable/feed_detail_pop_rename"
     >
 
-    <TextView
-        android:id="@+id/more_dialog_tv_share"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="分享"
-        android:textSize="20sp"
-        android:gravity="center"/>
+    <!--<TextView-->
+        <!--android:id="@+id/more_dialog_tv_share"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="分享"-->
+        <!--android:textSize="20sp"-->
+        <!--android:gravity="center"/>-->
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/color_333333" />
-    <TextView
-        android:id="@+id/more_dialog_tv_detail"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="圈子资料"
-        android:textSize="20sp"
-        android:gravity="center"/>
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/color_333333" />
-    <TextView
-        android:id="@+id/more_dialog_tv_feedback"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="反馈"
-        android:textSize="20sp"
-        android:gravity="center"/>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_333333" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/more_dialog_tv_detail"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="圈子资料"-->
+        <!--android:textSize="20sp"-->
+        <!--android:gravity="center"/>-->
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:background="@color/color_333333" />-->
+    <!--<TextView-->
+        <!--android:id="@+id/more_dialog_tv_feedback"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="反馈"-->
+        <!--android:textSize="20sp"-->
+        <!--android:gravity="center"/>-->
 </LinearLayout>

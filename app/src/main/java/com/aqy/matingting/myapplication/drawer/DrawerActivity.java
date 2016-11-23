@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.aqy.matingting.myapplication.R;
 import com.aqy.matingting.myapplication.drawer.adapter.MyViewPagerAdapter;
+import com.aqy.matingting.myapplication.drawer.frag.MorePopupWindow;
 import com.aqy.matingting.myapplication.drawer.listener.AppBarStateChangeListener;
 
 import java.util.ArrayList;
@@ -35,6 +36,7 @@ public class DrawerActivity extends AppCompatActivity {
     private TextView toolbarBack;
     private TextView toolbarGroupChat;
     private TextView toolbarShare;
+    private TextView toolbarMore;
 
 
     private ArrayList<String> tabList =new ArrayList<>(Arrays.asList("明星","推荐","我的","阅读"));
@@ -87,6 +89,16 @@ public class DrawerActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+            }
+        });
+
+
+        toolbarMore= (TextView) findViewById(R.id.toolbar_more);
+        toolbarMore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String[] items={"反馈","圈子资料","分享"};
+                MorePopupWindow.show(DrawerActivity.this,items,toolbarMore);
             }
         });
 
