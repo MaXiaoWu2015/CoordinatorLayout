@@ -13,6 +13,7 @@
     </include>
 
         <ScrollView
+            android:id="@+id/sv_task_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#ffffff"
@@ -30,6 +31,7 @@
                     android:orientation="vertical">
 
                     <RelativeLayout
+                        android:id="@+id/rl_task_center_header"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/pp_fanslevel_tasklist_today_fansvalue">
