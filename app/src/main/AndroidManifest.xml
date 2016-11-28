@@ -25,10 +25,10 @@
         <activity
             android:name=".toolbar.ToolBarActivity"
             android:label="ToolBar"
+            android:theme="@style/AppTheme.Base"></activity>
+        <activity android:name=".drawer.TaskCenterActivity"></activity>
+        <activity android:name=".HorizontalScrollView.MainPageActivity"
             android:theme="@style/AppTheme.Base">
-
-        </activity>
-        <activity android:name=".drawer.TaskCenterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

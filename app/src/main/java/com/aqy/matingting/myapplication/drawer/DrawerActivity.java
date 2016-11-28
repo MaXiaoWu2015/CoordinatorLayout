@@ -155,10 +155,10 @@ public class DrawerActivity extends AppCompatActivity {
     /**
      * toolbar背景透明度的变化
      * */
-    private void changeToolBarAlpha(int toolbarHeight, int verticalOffset) {
+    private void changeToolBarAlpha(int totalScrollRange, int verticalOffset) {
         verticalOffset = Math.abs(verticalOffset);
-        if (verticalOffset <= toolbarHeight) {
-            float scale = (float) (verticalOffset * 1.0 / toolbarHeight);
+        if (verticalOffset <= totalScrollRange) {
+            float scale = (float) (verticalOffset * 1.0 / totalScrollRange);
             Log.d(TAG, "changeToolBarAlpha: " + scale);
             float alpha = scale * 255;
             toolbar.setBackgroundColor(Color.argb((int) alpha, 128, 255, 255));

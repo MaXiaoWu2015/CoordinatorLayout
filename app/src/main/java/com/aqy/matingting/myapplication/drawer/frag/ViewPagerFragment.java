@@ -34,7 +34,7 @@ public class ViewPagerFragment extends Fragment{
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mPage=getArguments().getInt(ARGS_PAGE);
+//        mPage=getArguments().getInt(ARGS_PAGE);
         initVar();
     }
 
