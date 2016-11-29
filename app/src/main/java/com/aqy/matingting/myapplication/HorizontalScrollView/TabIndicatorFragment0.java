@@ -22,10 +22,11 @@ import java.util.Arrays;
 
 /**
  * Created by matingting on 2016/11/28.
+ * 最简单的方式实现tab indicator，没有indicator的滑动效果，效果有点生硬
  */
 
-public class MainFragment extends Fragment implements ViewPager.OnPageChangeListener {
-    private static final String TAG = "MainFragment";
+public class TabIndicatorFragment0 extends Fragment implements ViewPager.OnPageChangeListener {
+    private static final String TAG = "TabIndicatorFragment0";
     private LinearLayout llTabContainer;
     private ViewPager mainViewPager;
     private HorizontalScrollView mHorizontalScrollView;
@@ -40,7 +41,7 @@ public class MainFragment extends Fragment implements ViewPager.OnPageChangeList
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
             @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.main_frag, container, false);
+        View view = inflater.inflate(R.layout.frag0_tab_indicator, container, false);
         loadData();
         initView(view);
         return view;
@@ -103,7 +104,6 @@ public class MainFragment extends Fragment implements ViewPager.OnPageChangeList
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
     }
 
     @Override
@@ -121,7 +121,6 @@ public class MainFragment extends Fragment implements ViewPager.OnPageChangeList
         mHorizontalScrollView.smoothScrollTo(tabItem.getLeft()-tabItem.getWidth(),0);
         curSelectedTabIndex = position;
     }
-
     @Override
     public void onPageScrollStateChanged(int state) {
     }

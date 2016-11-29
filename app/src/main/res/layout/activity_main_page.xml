@@ -16,6 +16,6 @@
         android:id="@+id/horizontalscrollview_main_frag"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.aqy.matingting.myapplication.HorizontalScrollView.MainFragment">
+        android:name="com.aqy.matingting.myapplication.HorizontalScrollView.TabIndicatorFragment0">
     </fragment>
 </LinearLayout>
